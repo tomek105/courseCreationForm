@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form_control">
+            <h1>Formularz rejestracyjny</h1>
+            <hr>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Nazwa kursu" id="courseName"  name="courseName" aria-label="courseName">
+                </div>
+    
+                <div class=" coc-block-row">
+                    Data rozpoczecia kursu
+                    <div class="coc-block">
+                        <input class="form-control" type="date" name="courseDate" id="courseDate">
+                    </div>
+                </div>
+    
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control"  id="applicantName" name="applicantName" placeholder="Imię i nazwisko">
+                </div>
+    
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control"  id="applicantAddress" name="applicantAddress" placeholder="Adres (miasto, ulica, kod pocztowy)">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control"  id="applicantEmail" name="applicantEmail" placeholder="Adres mail">
+                </div>
+    
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="applicantJob"  name="applicantJob" placeholder="Stanowisko pracy">
+                </div>
+    
+                <label for="selectLevel" class="form-label">Poziom trudności kursu</label>
+                <select class="form-select" id="selectLevel" name="levelOfDifficulty">
+                    <option selected value="Poziom A">Poziom A</option>
+                    <option value="Poziom B">Poziom B</option>
+                    <option value="Poziom C">Poziom C</option>
+                </select>
+    
+                <div class="form-check form-switch" style="margin-top: 1rem;">
+                    <input class="form-check-input" name="paymentSwitch" type="checkbox" id="paymentSwitch">
+                    <label class="form-check-label" for="paymentSwitch">Faktura</label>
+                </div>
+    
+                <div class="company_info" id="companyInfo">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="companyName" name="companyName" placeholder="Nazwa firmy">
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="companyAddress" name="companyAddress" placeholder="Adres firmy">
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="companyNIP" name="companyNIP" placeholder="NIP">
+                    </div>
+                </div>
+    
+                <hr>
+                <div class="form-check form-switch" style="margin-top: 1rem;">
+                    <input class="form-check-input" type="checkbox" name="participantSwitch" id="participantSwitch">
+                    <label class="form-check-label" for="participantSwitch">Kursant</label>
+                </div>
+                <div class="participant_form" id="participantForm">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="participantName" id="participantFullnameInput"Input placeholder="Imię i nazwisko">
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="participantAge" id="participantAgeInput" placeholder="Wiek">
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="participantJob" id="participantJobInput" placeholder="Stanowisko pracy">
+                    </div>
+                    <button type="button" id="addParticipant" class="btn btn-dark rounded-pill pe-3 ps-3 ">Dodaj</button>
+                    <hr>
+                </div>
+    
+    
+                <ul class="list-group list-group-numbered" id="participantList">
+                </ul>
+                
+                <div class="form-check" style="margin-top: 1rem;">
+                    <input class="form-check-input" type="checkbox" name="rodoCheckbox" id="rodoCheckbox">
+                    <label class="form-check-label" for="rodoCheckbox">
+                        Zgadzam się na przetwarzanie moich danych osobowych.
+                    </label>               
+                </div>
+                <input type="button" value="Wyślij" id="submit" class="disabled btn btn-dark rounded pe-4 mt-3 ps-4">
+                <div style="color: chartreuse;" id="textAjax"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

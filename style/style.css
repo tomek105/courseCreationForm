@@ -1,0 +1,82 @@
+.container {
+    width: 700px;
+}
+
+body {
+    background-color: currentColor;
+}
+
+.form_control {
+    margin: 5% 0;
+    background: deepskyblue;
+    padding: 3% 3%;
+    border-radius: 25px;
+}
+
+.participant_form {
+    display: none;
+    margin-top: 1rem;
+}
+
+.company_info {
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.form_control h1{
+    text-align: center;
+}
+
+[type="date"] {
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 94% 50% no-repeat;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+input {
+    border: 1px solid #c4c4c4;
+    background-color: #fff;
+    width: 130px;
+}
+
+.coc-block-row {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.coc-block {
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+
+.coc-block-label {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    margin-bottom: 0;
+}
+
+.coc-input {
+    height: 30px;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 3px;
+    border: 1px solid #999;
+}
+
+.coc-form {
+    padding-top: 5px;
+    padding-left: 8px;
+}
